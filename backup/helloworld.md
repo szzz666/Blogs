@@ -1,6 +1,6 @@
 很早就看过奥德彪拉香蕉的视频，但是如此优秀的文案还是第一次见，所以下面把视频中的文案记录了下来，诙谐幽默。
 
-v2-4dd20bf7417f0ed077393aab515b6de9_720w
+`Gmeek-html<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/11755104/331448190-6ed0dd8e-68da-4422-8a00-907151fb60b9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240620T153341Z&X-Amz-Expires=300&X-Amz-Signature=63ff283e8adc607c86f820b9128bd6fb950143ddfec3a674726f6f42ddd3335d&X-Amz-SignedHeaders=host&actor_id=60167194&key_id=0&repo_id=348970367">`
 
 天之骄子奥德彪，二八大杠拉香蕉，
 下坡路上无人超，相机无法对上焦，
@@ -11,8 +11,6 @@ v2-4dd20bf7417f0ed077393aab515b6de9_720w
 生平不识奥德彪，哪有资格吃香蕉？
 虽说既生蕉何生彪，而没有蕉哪有彪，
 而即使能者多劳累断腰，只会憋了肚子空了包。
-
-203804394859
 
 奥德彪拉着500斤的香蕉，以时速90公里的速度，在下坡路上飙驰而一战成名，但他拉上香蕉无法刹车，放下香蕉无法生活。虽说倒下一个奥德彪，会有千千万万个奥德彪站起来，可身上若无千斤担，谁拿生命赌明天？而这里就是香蕉的王国，彪子的战场，二八大杠的坟场，非洲的布隆迪。
 
