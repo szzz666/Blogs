@@ -4,27 +4,18 @@
     "avatarUrl":"https://avatars.githubusercontent.com/u/60167194?v=4g",
     "homeUrl":"https://blogs.szzz666.top",
     "startSite":"24/6/2024",
-    "style":"<style>body{/* 加载背景图 */
-        background-image: url(https://www.loliapi.com/acg/);
-        /* 背景图垂直、水平均居中 */
+    "style":"<style>body{background-image: url(https://www.loliapi.com/acg/);
         background-position: center center;
-        /* 背景图不平铺 */
         background-repeat: no-repeat;
-        /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
         background-attachment: fixed;
-        /* 让背景图基于容器大小伸缩 */
         background-size: 100% auto;
-        /* 设置背景颜色，背景图加载过程中会显示背景色 */
         width: 100%;
         height: 100vh;
         position: fixed;
         overflow-y: auto;
         -webkit-user-select: none;
-        /* Safari */
         -moz-user-select: none;
-        /* Firefox */
         -ms-user-select: none;
-        /* Internet Explorer */
         user-select: none;}</style>",
     "GMEEK_VERSION":"last"
 }
