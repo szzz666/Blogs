@@ -4,7 +4,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <link rel="icon" href="https://avatars.githubusercontent.com/u/60167194?v=4g"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
@@ -94,8 +94,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>每天下班后，奥德彪都会去2S店里对自行车进行保养和两轮定位。毕竟奥氏家族的祖训是人在车在，即使人不在，也要让车在。低廉的运费让当地的货运业卷成了陀螺。所以只有累趴自己才能卷死同行，而自行车终是扛下了所有。就像他犯了天条一样，骆驼祥子不会告诉奥德彪，只要一直拉香蕉，就会有拉不完的香蕉。</p>
 <p>虽说贫穷是奥德彪品行端正，但他也有自己的理想，那就是等有钱了，一定要买一块地皮，到时候就可以先卖土后卖沙，卖完土沙养鱼虾，鱼虾卖完填废渣，废渣填完搞开发。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
+
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
+
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://blogs.szzz666.top"> 世中之中的小窝 </a>
 <p>
@@ -150,6 +152,8 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5p
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
 
 function openComments(){
     cm=document.getElementById("comments");
