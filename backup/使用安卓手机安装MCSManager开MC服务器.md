@@ -27,7 +27,7 @@ cd ~/Termux-Linux/Ubuntu
 
 #### 安装前置(xz gnupg git java vim)
 ```
-apt gpg curl ca-certificates gnupg vim unzip
+apt install xz-utils gnupg git openjdk-17-jdk vim
 ```
 #### 更新libc6(node需要更高的版本)
 在`/data/data/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/etc/apt/sources.list`
