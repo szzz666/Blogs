@@ -1,3 +1,6 @@
+#### 手机安装 Termux APP
+[点击下载](https://github.com/termux/termux-app/releases)
+选择适合版本下载安装
 #### 安装ubuntu
 ```
 pkg install proot git python -y
@@ -111,6 +114,33 @@ screen -S mcsmanager -X screen -t web bash -c './start-web.sh; read'
 # 在 screen 会话中运行 start-daemon.sh
 screen -S mcsmanager -X screen -t daemon bash -c './start-daemon.sh; read'
 ```
+> ####  配置自动启动MCSManager
+> 创建文件`/data/data/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/opt/auto_start_mcsm.sh`并写入
+> ```
+> screen -wipe
+> if screen -list | grep -q "mcsmanager"; then
+>     echo "mcsmanager 已经在运行，跳过启动步骤。"
+>     exit 0
+> fi
+> sleep 5
+> cd /opt/mcsmanager || { echo "无法进入 /opt/mcsmanager 目录"; exit 1; }
+> screen -dmS mcsmanager
+> screen -S mcsmanager -X screen -t web bash -c './start-web.sh; read'
+> screen -S mcsmanager -X screen -t daemon bash -c './start-daemon.sh; read'
+> echo " echo "MCSManager 已启动，请使用 'screen -r mcsmanager' 进入 screen 会话"
+> ```
+> 赋予文件执行权限
+> ```
+> cd /opt
+> chmod +x auto_start_mcsm.sh
+> ```
+> 在`remote:/data/data/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/root/.bashrc`文件中加入一行
+> `/opt/auto_start_mcsm.sh`
+#### 开MC服务器
+通过 `http://手机IP地址:23333/` 访问MCSManager
+鉴于之前已经安装了Java17环境，就可以直接使用面板，搭建MC服务器了
+使用面板UI搭建服务器，应该就不需要多解释了
+
 
 
 
