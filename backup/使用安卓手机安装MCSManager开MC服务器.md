@@ -9,6 +9,7 @@ git clone https://github.com/sqlsec/termux-install-linux
 cd termux-install-linux
 python termux-linux-install.py
 ```
+然后按1回车
 ####  启用ubuntu
 ```
 cd ~/Termux-Linux/Ubuntu
