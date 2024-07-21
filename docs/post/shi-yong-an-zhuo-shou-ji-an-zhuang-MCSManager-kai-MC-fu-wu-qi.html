@@ -22,7 +22,76 @@ python termux-linux-install.py
 ```
 cd ~/Termux-Linux/Ubuntu
 ./start-ubuntu.sh
-```。">
+```
+
+> #### 配置自动启用ubuntu
+> 在.bashrc文件中加上一行`bash ./Termux-Linux/Ubuntu/start-ubuntu.sh`
+> 该.bashrc文件路径`/data/data/com.termux/files/home/.bashrc`
+
+#### 更新清华源
+在`/data/data/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/etc/apt/sources.list`
+文件里面添加一行：
+`deb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main`
+
+#### 安装前置(xz gnupg git java vim)
+```
+apt gpg curl ca-certificates gnupg vim unzip
+```
+#### 更新libc6(node需要更高的版本)
+在`/data/data/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/etc/apt/sources.list`
+文件里面添加一行：
+`deb http://mirrors.ustc.edu.cn/debian-security buster/updates main`
+信任秘钥
+```
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A 54404762BBB6E853
+```
+要保持网络稳定，直到出现下面两行代码，若未出现则重新进行上一步
+```
+gpg: Total number processed: 2          
+gpg:               imported: 2
+```
+更新libc6
+```
+apt update
+apt install libc6
+```
+#### 安装node
+创建并移动到node文件夹
+```
+mkdir /usr/local/node
+cd /usr/local/node
+```
+下载node的压缩包(ARM64/ARMV8)
+```
+wget https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-arm64.tar.xz
+```
+解压
+```
+#把.tar.xz文件解压为.tar文件
+xz -d ./node-v20.11.0-linux-arm64.tar.xz
+#解压.tar文件
+tar -xvf ./node-v20.11.0-linux-arm64.tar
+#删除文件
+rm -r ./node-v20.11.0-linux-arm64.tar*
+```
+配置环境变量
+```
+sed -i '1 i NODE_HOME=/usr/local/node/node-v20.11.0-linux-arm64\nPATH=\$NODE_HOME/bin:\$PATH\nexport NODE_HOME PATH\n' /etc/profile
+```
+使配置生效
+```
+source /etc/profile
+```
+> 使用下面两条命令测试node，结果与井号内容类似即可
+> ```
+> node -v 
+> #v20.11.0
+> npm -v
+> #10.2.4
+> ```
+#### 安装MCSManager
+```
+# 切换到安装目录，你也可以换成其他的目录。">
 <meta property="og:title" content="使用安卓手机安装MCSManager开MC服务器">
 <meta property="og:description" content="#### 安装ubuntu
 ```
@@ -36,7 +105,76 @@ python termux-linux-install.py
 ```
 cd ~/Termux-Linux/Ubuntu
 ./start-ubuntu.sh
-```。">
+```
+
+> #### 配置自动启用ubuntu
+> 在.bashrc文件中加上一行`bash ./Termux-Linux/Ubuntu/start-ubuntu.sh`
+> 该.bashrc文件路径`/data/data/com.termux/files/home/.bashrc`
+
+#### 更新清华源
+在`/data/data/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/etc/apt/sources.list`
+文件里面添加一行：
+`deb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main`
+
+#### 安装前置(xz gnupg git java vim)
+```
+apt gpg curl ca-certificates gnupg vim unzip
+```
+#### 更新libc6(node需要更高的版本)
+在`/data/data/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/etc/apt/sources.list`
+文件里面添加一行：
+`deb http://mirrors.ustc.edu.cn/debian-security buster/updates main`
+信任秘钥
+```
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A 54404762BBB6E853
+```
+要保持网络稳定，直到出现下面两行代码，若未出现则重新进行上一步
+```
+gpg: Total number processed: 2          
+gpg:               imported: 2
+```
+更新libc6
+```
+apt update
+apt install libc6
+```
+#### 安装node
+创建并移动到node文件夹
+```
+mkdir /usr/local/node
+cd /usr/local/node
+```
+下载node的压缩包(ARM64/ARMV8)
+```
+wget https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-arm64.tar.xz
+```
+解压
+```
+#把.tar.xz文件解压为.tar文件
+xz -d ./node-v20.11.0-linux-arm64.tar.xz
+#解压.tar文件
+tar -xvf ./node-v20.11.0-linux-arm64.tar
+#删除文件
+rm -r ./node-v20.11.0-linux-arm64.tar*
+```
+配置环境变量
+```
+sed -i '1 i NODE_HOME=/usr/local/node/node-v20.11.0-linux-arm64\nPATH=\$NODE_HOME/bin:\$PATH\nexport NODE_HOME PATH\n' /etc/profile
+```
+使配置生效
+```
+source /etc/profile
+```
+> 使用下面两条命令测试node，结果与井号内容类似即可
+> ```
+> node -v 
+> #v20.11.0
+> npm -v
+> #10.2.4
+> ```
+#### 安装MCSManager
+```
+# 切换到安装目录，你也可以换成其他的目录。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://blogs.szzz666.top/post/shi-yong-an-zhuo-shou-ji-an-zhuang-MCSManager-kai-MC-fu-wu-qi.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/60167194?v=4g">
@@ -106,6 +244,94 @@ python termux-linux-install.py
 <h4>启用ubuntu</h4>
 <pre class="notranslate"><code class="notranslate">cd ~/Termux-Linux/Ubuntu
 ./start-ubuntu.sh
+</code></pre>
+<blockquote>
+<h4>配置自动启用ubuntu</h4>
+<p>在.bashrc文件中加上一行<code class="notranslate">bash ./Termux-Linux/Ubuntu/start-ubuntu.sh</code><br>
+该.bashrc文件路径<code class="notranslate">/data/data/com.termux/files/home/.bashrc</code></p>
+</blockquote>
+<h4>更新清华源</h4>
+<p>在<code class="notranslate">/data/data/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/etc/apt/sources.list</code><br>
+文件里面添加一行：<br>
+<code class="notranslate">deb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main</code></p>
+<h4>安装前置(xz gnupg git java vim)</h4>
+<pre class="notranslate"><code class="notranslate">apt gpg curl ca-certificates gnupg vim unzip
+</code></pre>
+<h4>更新libc6(node需要更高的版本)</h4>
+<p>在<code class="notranslate">/data/data/com.termux/files/home/Termux-Linux/Ubuntu/ubuntu-fs/etc/apt/sources.list</code><br>
+文件里面添加一行：<br>
+<code class="notranslate">deb http://mirrors.ustc.edu.cn/debian-security buster/updates main</code><br>
+信任秘钥</p>
+<pre class="notranslate"><code class="notranslate">apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 112695A0E562B32A 54404762BBB6E853
+</code></pre>
+<p>要保持网络稳定，直到出现下面两行代码，若未出现则重新进行上一步</p>
+<pre class="notranslate"><code class="notranslate">gpg: Total number processed: 2          
+gpg:               imported: 2
+</code></pre>
+<p>更新libc6</p>
+<pre class="notranslate"><code class="notranslate">apt update
+apt install libc6
+</code></pre>
+<h4>安装node</h4>
+<p>创建并移动到node文件夹</p>
+<pre class="notranslate"><code class="notranslate">mkdir /usr/local/node
+cd /usr/local/node
+</code></pre>
+<p>下载node的压缩包(ARM64/ARMV8)</p>
+<pre class="notranslate"><code class="notranslate">wget https://nodejs.org/dist/v20.11.0/node-v20.11.0-linux-arm64.tar.xz
+</code></pre>
+<p>解压</p>
+<pre class="notranslate"><code class="notranslate">#把.tar.xz文件解压为.tar文件
+xz -d ./node-v20.11.0-linux-arm64.tar.xz
+#解压.tar文件
+tar -xvf ./node-v20.11.0-linux-arm64.tar
+#删除文件
+rm -r ./node-v20.11.0-linux-arm64.tar*
+</code></pre>
+<p>配置环境变量</p>
+<pre class="notranslate"><code class="notranslate">sed -i '1 i NODE_HOME=/usr/local/node/node-v20.11.0-linux-arm64\nPATH=\$NODE_HOME/bin:\$PATH\nexport NODE_HOME PATH\n' /etc/profile
+</code></pre>
+<p>使配置生效</p>
+<pre class="notranslate"><code class="notranslate">source /etc/profile
+</code></pre>
+<blockquote>
+<p>使用下面两条命令测试node，结果与井号内容类似即可</p>
+<pre class="notranslate"><code class="notranslate">node -v 
+#v20.11.0
+npm -v
+#10.2.4
+</code></pre>
+</blockquote>
+<h4>安装MCSManager</h4>
+<pre class="notranslate"><code class="notranslate"># 切换到安装目录，你也可以换成其他的目录。
+cd /opt/
+
+# 进入你的安装目录
+mkdir /opt/mcsmanager/
+cd /opt/mcsmanager/
+
+# 下载 MCSManager（如果无法下载可以先科学上网下载再上传到服务器）
+wget https://github.com/MCSManager/MCSManager/releases/latest/download/mcsmanager_linux_release.tar.gz
+
+# 解压到安装目录
+tar -zxf mcsmanager_linux_release.tar.gz
+</code></pre>
+<h4>启动MCSManager</h4>
+<p>安装screen</p>
+<pre class="notranslate"><code class="notranslate">apt install screen
+</code></pre>
+<p>启动MCSManager</p>
+<pre class="notranslate"><code class="notranslate"># 进入 /opt/mcsmanager 目录
+cd /opt/mcsmanager
+
+# 创建并进入一个新的 screen 会话
+screen -dmS mcsmanager
+
+# 在 screen 会话中运行 start-web.sh
+screen -S mcsmanager -X screen -t web bash -c './start-web.sh; read'
+
+# 在 screen 会话中运行 start-daemon.sh
+screen -S mcsmanager -X screen -t daemon bash -c './start-daemon.sh; read'
 </code></pre></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
