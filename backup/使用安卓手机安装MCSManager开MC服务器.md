@@ -128,7 +128,7 @@ screen -S mcsmanager -X screen -t daemon bash -c './start-daemon.sh; read'
 > screen -dmS mcsmanager
 > screen -S mcsmanager -X screen -t web bash -c './start-web.sh; read'
 > screen -S mcsmanager -X screen -t daemon bash -c './start-daemon.sh; read'
-> echo " echo "MCSManager 已启动，请使用 'screen -r mcsmanager' 进入 screen 会话"
+> echo "MCSManager 已启动，请使用 'screen -r mcsmanager' 进入 screen 会话"
 > ```
 > 赋予文件执行权限
 > ```
