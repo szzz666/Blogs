@@ -1,5 +1,3 @@
-### 服务器常见问题解答 (F&Q)
-
 > 问：MOT是什么？
 > 答：Nukkit-MOT 是 [Nukkit](https://github.com/CloudburstMC/Nukkit) Minecraft Bedrock Edition 服务器软件的特殊版本。 它是基于 [NukkitPetteriM1Edition](https://github.com/PetteriM1/NukkitPetteriM1Edition) 的最后一个开源版本开发的。详见：[MOT文档](https://www.nukkit-mot.com/zh/docs/intro#whats-new)
 
