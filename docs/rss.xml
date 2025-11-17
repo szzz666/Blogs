@@ -1,8 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>世中之中的小窝</title><link>https://blogs.szzz666.top</link><description>我是世中之中，喜欢ACG和编程（可惜不太会）。另外我也是MC服务器星空服的服主，欢迎访问我的个人网站和游玩我的服务器。</description><copyright>世中之中的小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/60167194?v=4g</url><title>avatar</title><link>https://blogs.szzz666.top</link></image><lastBuildDate>Mon, 17 Nov 2025 11:02:55 +0000</lastBuildDate><managingEditor>世中之中的小窝</managingEditor><ttl>60</ttl><webMaster>世中之中的小窝</webMaster><item><title>星空服文档</title><link>https://blogs.szzz666.top/post/xing-kong-fu-wen-dang.html</link><description># 教程
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>世中之中的小窝</title><link>https://blogs.szzz666.top</link><description>我是世中之中，喜欢ACG和编程（可惜不太会）。另外我也是MC服务器星空服的服主，欢迎访问我的个人网站和游玩我的服务器。</description><copyright>世中之中的小窝</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/60167194?v=4g</url><title>avatar</title><link>https://blogs.szzz666.top</link></image><lastBuildDate>Mon, 17 Nov 2025 11:20:43 +0000</lastBuildDate><managingEditor>世中之中的小窝</managingEditor><ttl>60</ttl><webMaster>世中之中的小窝</webMaster><item><title>星空服文档</title><link>https://blogs.szzz666.top/post/xing-kong-fu-wen-dang.html</link><description># 立刻游玩
+
+## 服务器信息
+欢迎来到星空服！
+-----服务器IP端口-----
+主服生存服（Nukkit-MOT）：
+注（英文冒号前部分是IP地址后部分是端口，如mc.szzz666.top:19132，mc.szzz666.top是IP地址，19132是端口）
+默认线路：mc.szzz666.top:19132
+备用Frp线路：8.134.180.172:19132
+官网：https://starrysky.szzz666.top/
+
+## 快速开始
+### 国际版玩家
+1. 安装基岩版Minecarftf
+2. 点击'服务器' → '添加服务器'
+3. 输入服务器地址和端口
+4. 点击'加入服务器'
+5. 完成Xbox认证和星空认证双重认证
+
+### 中国版玩家
+
+# 教程
+
 # 注意事项
-# 问答QAZ
-。</description><guid isPermaLink="true">https://blogs.szzz666.top/post/xing-kong-fu-wen-dang.html</guid><pubDate>Mon, 17 Nov 2025 11:02:18 +0000</pubDate></item><item><title>强调关键信息使用</title><link>https://blogs.szzz666.top/post/qiang-diao-guan-jian-xin-xi-shi-yong.html</link><description>&gt; [!NOTE]
+
+# 规定
+
+### 群规
+- 群昵称设置应当遵循：建议改为游戏ID。</description><guid isPermaLink="true">https://blogs.szzz666.top/post/xing-kong-fu-wen-dang.html</guid><pubDate>Mon, 17 Nov 2025 11:02:18 +0000</pubDate></item><item><title>强调关键信息使用</title><link>https://blogs.szzz666.top/post/qiang-diao-guan-jian-xin-xi-shi-yong.html</link><description>&gt; [!NOTE]
 &gt; 用户应该了解的有用信息，即使是在浏览内容时。</description><guid isPermaLink="true">https://blogs.szzz666.top/post/qiang-diao-guan-jian-xin-xi-shi-yong.html</guid><pubDate>Sat, 15 Feb 2025 16:18:04 +0000</pubDate></item><item><title>星空服宣传帖</title><link>https://blogs.szzz666.top/post/xing-kong-fu-xuan-chuan-tie.html</link><description>&gt; [!NOTE]
 &gt; 标题：星空StarrySky——多版本基岩版|6.0开启|已开6年|生存|冒险|自研插件|氛围温馨|公益|养老
 
